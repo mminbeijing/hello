@@ -1,0 +1,73 @@
+<!--------------------用户信息查看弹出框 start-------------------->
+<div class="modal fade" tabindex="-1" role="dialog" data-backdrop="static" id="popAppModifyCurrPassword">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title">修改密码</h4>
+			</div>
+			<div class="modal-body">
+				<form id="formAppModifyCurrPassword">
+					<div class="app-row">
+						<span class="app-width-90 app-bold">原始密码</span>
+						<div class="col-sm-9">
+							<input class="form-control" type="password" name="oldPassword" data-valid-type="Require">
+						</div>
+					</div>
+					<div class="app-row">
+						<span class="app-width-90 app-bold">新密码</span>
+						<div class="col-sm-9">
+							<input class="form-control" type="password" name="newPassword" data-valid-type="Require">
+						</div>
+					</div>
+					<div class="app-row">
+						<span class="app-width-90 app-bold">确认密码</span>
+						<div class="col-sm-9">
+							<input class="form-control" type="password" name="confirmPassword" data-valid-type="Require">
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-success" type="button" id="btnAppSubmitFormModifyCurrPassword">确定</button>
+				<button class="btn btn-default" type="button" data-dismiss="modal">取消</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--------------------用户信息查看弹出框  end-------------------->
+<div class="row">
+	<nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+		<div class="navbar-header">
+			<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+		<div class="navbar-header">
+			<div style="font-size: 24px; font-weight: 600; padding: 0 10px;">vgop门户</div>
+		</div>
+		<ul class="nav navbar-top-links navbar-right">
+			<li>
+				<a href="javascript:void(0);">
+					<span class="clsCurrUserInfo">
+						<span data-app-name="username" data-app-type="html">vgop</span>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);" id="openAppModifyCurrPassword">
+					<i class="fa fa-shield"></i>
+					<span>修改密码</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:AppBase.base.logout();">
+					<i class="fa fa-sign-out"></i>
+					<span>退出</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+</div>

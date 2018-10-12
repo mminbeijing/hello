@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>系统登陆</title>
+<link href="static/lib/bootstrap/css/bootstrap.min.css"
+	rel="stylesheet">
+<link href="static/css/font-awesome/css/font-awesome.min.css"
+	rel="stylesheet">
+<link href="static/css/animate.min.css" rel="stylesheet">
+<link href="static/lib/plugins/toastr/toastr.min.css"
+	rel="stylesheet">
+<link href="static/css/app-layout.css" rel="stylesheet">
+<link href="static/css/app-templete.css" rel="stylesheet">
+
+<!-- Mainly scripts -->
+<script src="static/lib/jquery/jquery-2.1.4.min.js"></script>
+<script src="static/lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="static/lib/plugins/toastr/toastr.min.js"></script>
+<script src="static/lib/plugins/metisMenu/metisMenu.min.js"></script>
+<script
+	src="static/lib/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<!-- Custom and plugin javascript -->
+<script src="static/lib/plugins/pace/pace.min.js"></script>
+<script src="static/js/base/app.msg.js"></script>
+<script src="static/js/base/app.config.js"></script>
+<script src="static/js/base/app.tool.js"></script>
+<script src="static/js/base/app.validate.js"></script>
+<script src="static/js/base/app.table.js"></script>
+<script src="static/js/base/app.base.js"></script>
+<script src="static/js/login.js"></script>
+</head>
+<body class="gray-bg" onload="Pg0001.toWindowTop();">
+	<div class="loginColumns animated fadeInDown">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<h2 class="font-bold">司马平台失联修复系统</h2>
+				<div class="ibox-content">
+					<form id="formLogin" class="m-t" role="form">
+						<div class="form-group">
+							<input class="form-control" type="text" id="inputUsername"
+								name="username" placeholder="Username" data-valid-type="Require">
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="password" id="inputPassword"
+								name="password" placeholder="Password" data-valid-type="Require">
+						</div>
+						<div class="form-group app-display-none">
+							<div class="col-sm-1">
+								<input type="checkbox" class="form-control" id="inputRememberMe"
+									style="margin-left: -13px; width: 20px; height: 20px; margin-top: 11px;" />
+							</div>
+							<label class="control-label" style="line-height: 43px;">记住用户名和密码</label>
+						</div>
+						<button type="button" id="btnSubmitFormLogin"
+							class="btn btn-primary block full-width m-b">登录</button>
+					</form>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+		<hr />
+		<div class="row">
+			<div class="col-md-6"></div>
+			<div class="col-md-6 text-right">
+				<small>©2018 北京移动 </small>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
